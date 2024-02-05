@@ -1,0 +1,115 @@
+:root {
+  --xsmall: .625rem;
+  --small: .813rem;
+  --medium: 1rem;
+  --large: 1.25rem;
+  --xlarge: 1.563rem;
+  --2xlarge: 1.875rem;
+  --3xlarge: 3.125rem;
+  --4xlarge: 4.688rem;
+  --5xlarge: 6.25rem;
+  --white: #fff;
+  --light: #fafafa;
+  --darklight: #f0f0f0;
+  --darkerlight: #ebebeb;
+  --neutral: #e6e6e6;
+  --darkneutral: #b8b8b8;
+  --darkerneutral: #737373;
+  --black: #000;
+  --dark: #191919;
+  --lightdark: #333;
+  --lighterdark: #4c4c4c;
+  --whiteop25: rgba(255,255,255,0.25);
+  --whiteop5: rgba(255,255,255,0.5);
+  --whiteop75: rgba(255,255,255,0.75);
+  --neutralop25: rgba(230,230,230,0.25);
+  --neutralop5: rgba(230,230,230,0.5);
+  --neutralop75: rgba(230,230,230,0.75);
+  --blackop25: rgba(0,0,0,0.25);
+  --blackop5: rgba(0,0,0,0.5);
+  --blackop75: rgba(0,0,0,0.75);
+  --trnsp: rgba(255,255,255,0);
+  --co1: #bd6d48;
+  --lightco1: #DDB5A3;
+  --lighterco1: #F1E1DA;
+  --darkco1: #975739;
+  --co2: #7c3f5f;
+  --lightco2: #BD9FAF;
+  --lighterco2: #E4D8DF;
+  --darkco2: #63324C;
+  --co3: #3a1075;
+  --lightco3: #9C87BA;
+  --lighterco3: #D7CFE3;
+  --darkco3: #2E0C5D;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  line-height:var(--xlarge);
+  margin: 0px
+}
+
+h1, h2, h3 {
+  margin: 0px;
+  font-size: var(--3xlarge)
+}
+
+h3 {
+  font-weight: 100;
+  font-style: italic;
+  font-size: var(--large);
+  align-self: flex-end;
+}
+
+h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: var(--large);
+  margin: 10px 20px;
+}
+
+.headerbloc {
+  height:300px;
+  color: var(--white);
+  display: flex;
+  text-shadow: var(--darkerlight);
+  flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://images.unsplash.com/photo-1576367872882-489d040b9bde?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+p {width: 50%;
+text-align: justify;
+margin:0px}
+
+tisec {font-style:italic;
+font-family: Playfair Display;
+font-size: var(--xlarge);
+margin:0px;
+display: block;
+margin: 20px 0px}
+
+tisec#one {font-size: var(--2xlarge);}
+
+.flexbox {width: 50%;
+  display: flex;
+  justify-content: space-between;}
+
+.flexbox p {width:calc(50% - 10px);}
+
+@media(max-width: 1024px) {
+  .headerbloc {
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {margin: 20px 0px}
+  p, .flexbox {width: 75%;    flex-direction: column;}
+  .flexbox p {width:100%}
+
+}
